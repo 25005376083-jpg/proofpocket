@@ -135,13 +135,13 @@ export default function PricingPage() {
               More room and flexibility for your purchases.
             </p>
 
-            <button
-              type="button"
-              disabled
-              className="mt-7 w-full cursor-not-allowed rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 px-5 py-3.5 text-sm font-extrabold text-white opacity-80"
+            {/* Demo Checkout Button */}
+            <Link
+              href="/demo-checkout"
+              className="mt-7 flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 px-5 py-3.5 text-sm font-extrabold text-white shadow-lg transition hover:scale-[1.02] hover:shadow-violet-500/30"
             >
-              Coming Soon
-            </button>
+              Subscribe Now →
+            </Link>
 
             <div className="mt-8 space-y-4">
               {proFeatures.map((feature) => (
@@ -158,10 +158,12 @@ export default function PricingPage() {
 
         {/* Footer note */}
         <div className="mx-auto mt-12 max-w-2xl rounded-2xl border border-slate-200 bg-white/70 p-5 text-center dark:border-white/10 dark:bg-white/[0.03]">
-          <p className="text-sm font-bold">🔒 Your purchases stay organized.</p>
+          <p className="text-sm font-bold">
+            🔒 Your purchases stay organized.
+          </p>
           <p className="mt-2 text-xs leading-6 text-slate-500 dark:text-slate-400">
-            Pro subscriptions and online payments are not available yet.
-            Your Free plan remains available while premium features are being developed.
+            Demo checkout is for testing and university presentation only.
+            No real payment will be processed.
           </p>
         </div>
 
